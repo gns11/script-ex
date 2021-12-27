@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5*9단표</title>
+</head>
+<body>
+    <script>
+        for(let b = 1; b<=9; b++){
+            for(let a = 1; a<=9; a++){
+                let c = a*b;
+                document.write(a + 'X' + b + '=' + c + '  ');
+                if(a>=3){
+                    break;
+                }
+            }
+            document.write('<br>');
+            if(b>=5){
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
