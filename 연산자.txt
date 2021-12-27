@@ -37,3 +37,55 @@ a!=b => 부정
 삼항연산자
  a  ?  b :  c  ;
 조건?true:false;
+
+
+if조건){
+    true
+}else{
+    false
+}
+
+다중if
+if(조건){
+    true1
+}
+else if(조건2){
+    true2
+}
+else if(조건3){
+    true3
+}
+else{
+    false
+}
+
+중첩if
+if(조건){
+    if(조건){
+        true
+    }
+}
+else{
+    false
+}
+
+switch(){
+    case 값1 : 
+    ººº
+    break;
+    case 값2 : 
+    ººº
+    break;
+    case 값3 : 
+    ººº
+    break;
+    case 값4 : 
+    ººº
+    break;
+    case 값5 : 
+    ººº
+    break;
+    default: 
+    ººº
+    break;
+}

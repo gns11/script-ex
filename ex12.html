@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국어성적처리</title>
+</head>
+<body>
+    <div class="wrap">
+        <section class="sec input-data">
+            <label>국어점수 <input type="text" id="in-data"></label>
+            <br>
+            <button type="button" id="btn">처리</button>
+        </section>
+        <hr>
+        <section class="sec output-info">
+            <label>판정<input type="text" id="out-info"></label>
+        </section>
+    </div>
+    <script>
+        let _indata = document.getElementById('in-data');
+        let _outinfo = document.getElementById('out-info');
+        let _btn = document.getElementById('btn');
+        _btn.addEventListener('click',function(){
+            if(_indata.value >= 90){
+                _outinfo.value = 'A';
+            }
+            else if(_indata.value >= 80){
+                _outinfo.value = 'B';
+            }
+            else if(_indata.value >= 70){
+                _outinfo.value = 'C';
+            }
+            else if(_indata.value >= 60){
+                _outinfo.value = 'D';
+            }
+            else{
+                _outinfo.value = '재시험';
+            }
+        });
+    </script>
+</body>
+</html>
