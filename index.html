@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/user-function.js"></script>
+    <title>Web</title>
+    <style>
+        :root{
+            font-size: 32px;
+        }
+        h1{
+            font-size: 64px;
+            color: darkblue;
+            text-align: center;
+        }
+        ul,ol,li{
+            list-style: none;
+        }
+        ul a{
+            font-size: 42px;
+            color: darkblue;
+        }
+        button{
+            font-size: inherit;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="./index.html">Web</a></h1>
+    <button id="btn">NIGHT</button>
+    <ul>
+        <li><a href="#" onclick="return false">html</a></li>
+        <li><a href = "#" onclick="return false">css</a></li>
+        <li ><a href="#" onclick="return false">javaScript</a></li>
+    </ul>
+    <hr>
+    <h2>web이란 무엇인가?</h2>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, et quas ducimus dignissimos aliquid corrupti ipsum maiores ex voluptate laudantium aperiam ab, perferendis nihil dolores deserunt cum corporis, beatae sunt.
+        Ut quae molestiae eveniet, cupiditate reiciendis perferendis mollitia laboriosam. Ratione dicta cupiditate quaerat, rerum similique quia consequatur voluptatum animi? Molestiae aspernatur neque porro magni perferendis quidem tenetur minima inventore explicabo.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis minima nulla consequatur facere voluptates explicabo natus consectetur illo sed modi labore dolores, libero, alias ea. Magnam necessitatibus molestiae quos architecto?
+        Aliquam aspernatur, perspiciatis eum sit, maxime cum, quibusdam inventore sequi fugiat accusamus natus optio fugit dolorum sint deleniti voluptas dolore odio eaque! Saepe eligendi adipisci animi voluptatem non, placeat fugiat.
+        Cupiditate pariatur eaque quas quasi laborum ea optio voluptate explicabo iure accusamus neque architecto nisi temporibus dignissimos natus, molestiae hic quia numquam omnis harum aspernatur libero soluta dolorum veritatis? Eos!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quis necessitatibus neque labore doloribus molestiae repudiandae cumque, mollitia voluptatibus delectus rem soluta. Libero beatae debitis ipsa! Repudiandae, commodi laudantium!
+        Voluptatum nihil natus sit ipsam nobis quia beatae, tempora modi alias eveniet, minus accusantium fuga hic! Est rerum numquam dolores sapiente velit provident architecto accusantium enim esse, in, doloribus sint?
+        Unde, officia sequi quam a corrupti, dolor odio incidunt ratione rem illo ullam nisi, placeat ab. Praesentium numquam nisi quas voluptatibus eos, dolore vel illo animi, aperiam, quia est at.
+    </p>
+    <script>
+        let trigger = document.getElementById('btn');
+        trigger.onclick = function(){
+            inText(this);
+        }
+        function inText(self){
+            if(self.innerHTML == 'NIGHT'){
+                self.innerHTML = 'DAY';
+                setStyle.bodyBgColor('#000');
+                setStyle.aTagColor('lightblue');
+                setStyle.buttonColor('2px solid #fff','#000','#fff');
+                setStyle.h2Color('#fff');
+                setStyle.pColor('#ccc');
+            }else{
+                self.innerHTML = 'NIGHT';
+                setStyle.bodyBgColor('#fff');
+                setStyle.aTagColor('darkblue');
+                setStyle.buttonColor('2px outset #767676','#fff','#000');
+                setStyle.h2Color('#000');
+                setStyle.pColor('#000');
+            }
+        }
+    </script>
+</body>
+</html>

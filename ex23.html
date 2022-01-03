@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>배열의 반복</h1>
+    <div class="container">   
+        <div class="box box01"></div>
+        <div class="box box02"></div>
+        <div class="box box03"></div>
+        <div class="box box04"></div>
+        <div class="box box05" onclick="
+            box[4].style.backgroundColor = '#00f';
+        "></div>
+        <div class="box box06"></div>
+        <div class="box box07"></div>
+        <div class="box box08"></div>
+        <div class="box box09"></div>
+        <div class="box box10"></div>
+    </div>
+
+    <script>
+        let box = document.getElementsByClassName('box');
+        for(let cnt = 0; cnt<box.length; cnt++){
+            box[cnt].innerHTML = cnt;
+        }
+    </script>
+</body>
+</html>
